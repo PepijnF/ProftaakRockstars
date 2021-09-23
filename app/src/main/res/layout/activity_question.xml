@@ -33,7 +33,8 @@
             android:backgroundTint="#FFE000"
             android:textColor="#242424"
             app:layout_constraintEnd_toStartOf="@+id/Space3" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/space2" app:layout_constraintTop_toBottomOf="@+id/space"/>
+            app:layout_constraintBottom_toTopOf="@+id/space2" app:layout_constraintTop_toBottomOf="@+id/space"
+            app:cornerRadius="20dp"/>
     <Button
             android:text="B"
             android:layout_width="0dp"
@@ -42,7 +43,7 @@
             app:layout_constraintBottom_toTopOf="@+id/space2" app:layout_constraintStart_toEndOf="@+id/Space3"
             android:backgroundTint="#FFE000"
             android:textColor="#242424"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" app:cornerRadius="20dp"/>
     <Button
             android:text="C"
             android:layout_width="0dp"
@@ -50,7 +51,9 @@
             android:backgroundTint="#FFE000"
             android:textColor="#242424"
             app:layout_constraintEnd_toStartOf="@+id/Space3" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/buttonAnswerA"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/buttonAnswerA"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"
+            app:cornerRadius="20dp"/>
     <Button
             android:text="D"
             android:layout_width="0dp"
@@ -59,7 +62,7 @@
             android:textColor="#242424"
             app:layout_constraintTop_toBottomOf="@+id/space2"
             app:layout_constraintBottom_toBottomOf="@+id/Space3" app:layout_constraintStart_toEndOf="@+id/Space3"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" app:cornerRadius="20dp"/>
     <TextView
             android:text="Question"
             android:layout_width="wrap_content"

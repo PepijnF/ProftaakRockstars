@@ -14,7 +14,7 @@
             app:backgroundTint="#FFE000" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" style="@style/Widget.AppCompat.Button"
-            android:textColor="#242424"/>
+            android:textColor="#242424" app:cornerRadius="20dp"/>
     <TextView
             android:text="Name:"
             android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
     <CheckBox
             android:text="Remember Name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/checkBox"
+            android:layout_height="wrap_content" android:id="@+id/checkBoxRememberName"
             app:layout_constraintStart_toStartOf="@+id/editText" android:layout_marginTop="6dp"
             app:layout_constraintTop_toBottomOf="@+id/editText" android:textColor="#FFFFFF"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

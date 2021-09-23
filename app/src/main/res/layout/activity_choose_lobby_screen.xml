@@ -10,7 +10,7 @@
     <TextView
             android:text="Quiz App"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:layout_height="wrap_content" android:id="@+id/textQuizApp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:textScaleX="1" android:textSize="50dp"
             android:layout_marginTop="100dp" android:textColor="#FFFFFF"/>
@@ -20,18 +20,18 @@
               app:layout_constraintBottom_toBottomOf="parent"
               app:layout_constraintStart_toStartOf="parent"
               android:hint="Lobby Code"
-              android:id="@+id/editText2" app:layout_constraintTop_toTopOf="parent"
+              android:id="@+id/inputLobbyCode" app:layout_constraintTop_toTopOf="parent"
               app:layout_constraintEnd_toEndOf="parent"/>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Join Lobby"
-            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            app:layout_constraintTop_toBottomOf="@+id/inputLobbyCode"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:id="@+id/button2" app:backgroundTint="#FFE000" android:textColor="#242424"/>
+            android:id="@+id/buttonJoinLobby" app:backgroundTint="#FFE000" android:textColor="#242424"/>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Host Lobby"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintTop_toBottomOf="@+id/button2"
-            app:backgroundTint="#FFE000" android:textColor="#242424"/>
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintTop_toBottomOf="@+id/buttonJoinLobby"
+            app:backgroundTint="#FFE000" android:textColor="#242424" android:id="@+id/buttonHostLobby"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

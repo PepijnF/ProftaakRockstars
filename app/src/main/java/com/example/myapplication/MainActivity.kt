@@ -1,11 +1,10 @@
 package com.example.myapplication
 
 import android.content.Context
-import android.content.Context.MODE_PRIVATE
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val startAppButton = findViewById<Button>(R.id.buttonLogin)
         startAppButton.setOnClickListener{
-            saveDate()
+            saveData()
             val Intent = Intent(this, HomeScreen::class.java)
             startActivity(Intent)
         }
@@ -29,15 +28,26 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun saveData(){
+        if(checkBoxRememberName.isChecked){
+            val insertedText:String = editText.text.toString()
+            textView.text = "Name: "+ insertedText
 
-        val insertedText:String = editText.text.toString()
-        textView.text = "Name: "+ insertedText
+            val sharedPreferences = getSharedPreferences("name", Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.apply{
+                putString("Name", insertedText)
+            }.apply()
 
-        val sharedPreferences = getSharedPreferences("name", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
-        editor.apply{
-            putString("Name", insertedText)
+            Toast.makeText(this,"Data saved", Toast.LENGTH_SHORT).show()
         }
+
+    }
+
+    private fun loadData(){
+        val sharedPreferences = getSharedPreferences("name", Context.MODE_PRIVATE)
+        val savedString = sharedPreferences.getString("Name", null)
+
+        textView.text = "Name: " + savedString
 
     }
 }

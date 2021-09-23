@@ -11,7 +11,7 @@
     <TextView
             android:text="Lobby code"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView4"
+            android:layout_height="wrap_content" android:id="@+id/textLobbyCode"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:textColor="#FFFFFF" android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/buttonStartHosting" app:layout_constraintTop_toTopOf="parent"/>

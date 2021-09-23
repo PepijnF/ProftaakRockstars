@@ -9,6 +9,6 @@ class ChooseLobbyScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_lobby_screen)
 
-        button2.setOnClickListener {  }
+        buttonJoinLobby.setOnClickListener {  }
     }
 }
